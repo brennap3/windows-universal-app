@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="1d55c8bd-2167-42e3-84d9-e4de56176029" Publisher="CN=Peter" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="1d55c8bd-2167-42e3-84d9-e4de56176029" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>windows universal app</DisplayName>
+    <PublisherDisplayName>Peter</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="windows_universal_app.App">
+      <uap:VisualElements DisplayName="windows universal app" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="windows universal app" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+    <Capability Name="codeGeneration" />
+    <uap:Capability Name="videosLibrary" />
+    <uap:Capability Name="voipCall" />
+    <uap:Capability Name="userAccountInformation" />
+    <uap:Capability Name="sharedUserCertificates" />
+    <uap:Capability Name="removableStorage" />
+    <uap:Capability Name="contacts" />
+    <uap:Capability Name="phoneCall" />
+    <uap:Capability Name="appointments" />
+    <uap:Capability Name="chat" />
+    <uap:Capability Name="musicLibrary" />
+    <uap:Capability Name="objects3D" />
+    <uap:Capability Name="picturesLibrary" />
+    <uap:Capability Name="blockedChatMessages" />
+    <uap:Capability Name="enterpriseAuthentication" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="proximity" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="bluetooth" />
+  </Capabilities>
+</Package>

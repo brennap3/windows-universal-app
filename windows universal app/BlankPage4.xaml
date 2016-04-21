@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="UWPNavigation.BlankPage4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPNavigation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid >
+            <Hub Header = "Photo capture"/>
+            <Button Content = "Capture Photo"  Click = "Button_Click" Margin="91,93,0,515" Width="131"/>
+            <Button x:Name="button" Content="Return To Splash" Click = "button_Click_1" HorizontalAlignment="Left" Margin="91,130,0,478"  Width="131"/>
+            <Image Name="captureImage" HorizontalAlignment="Left" Height="503"  VerticalAlignment="Top" Width="360"/>
+
+
+        </Grid>
+    </Grid>
+</Page>
