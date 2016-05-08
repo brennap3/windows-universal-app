@@ -32,6 +32,7 @@ namespace windows_universal_app
         Windows.UI.Popups.MessageDialog dlg;
         string path;
         SQLite.Net.SQLiteConnection conn;
+        bool msgsent = false;
 
         public BlankPage6()
         {
@@ -75,18 +76,21 @@ namespace windows_universal_app
             var readprod = xsq + ysq + zsq;
             string Resultaccel = "Panic";
 
-            if (readprod > 1.5)
+            if (readprod > 1.5 & msgsent==false) //use this to only send once, dont know if you wanna do this multiple messages could be handy
             {
                 try
                 {
+                    msgsent = true;
                     // dlg = new Windows.UI.Popups.MessageDialog(Resultaccel);
                     // await dlg.ShowAsync();
+                    myAccelerometer = null;
+                    
                     LatLng latlng = await mycoordinatesGPS();
                     string message = latlng.lat + latlng.lng + "_Test_Panic_Distress_Call";
                     await sendSMS(message);
                     await Send_Email(message);
 
-                    CloseApp();
+                    CloseApp(); //close the app leave no trace you had this set
                 }
                 catch (Exception ex) { CloseApp(); } //if an exception occurs you still want to close app as to leave no trace what you did
             }
