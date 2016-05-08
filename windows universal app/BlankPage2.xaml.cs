@@ -53,7 +53,7 @@ namespace UWPNavigation
 
         string path;
         SQLite.Net.SQLiteConnection conn;
-        private Accelerometer myAccelerometer;
+        
         public BlankPage2(){ 
          this.InitializeComponent();
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path,
@@ -96,7 +96,7 @@ namespace UWPNavigation
                 await sendSMS(message);
                 await Send_Email(message);
                 await SendTweet(message);
-                string Result = "Message sen on all channels";
+                string Result = "Message sent on all channels";
                 Windows.UI.Popups.MessageDialog dlg = new
                     Windows.UI.Popups.MessageDialog(Result);
 
@@ -139,6 +139,11 @@ namespace UWPNavigation
         private async void Button_Click_4(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(windows_universal_app.BlankPage5));
+        }
+
+        private async void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(windows_universal_app.BlankPage6));
         }
 
         private async void ComposeEmail(String recipient,
@@ -201,6 +206,7 @@ namespace UWPNavigation
                 SmtpServer oServer = new SmtpServer("smtp.gmail.com");
 
                 // User and password for SMTP authentication            
+                // these should be in a reource file or else add them via SQLite
                 oServer.User = "peter.brennan74@gmail.com";
                 oServer.Password = "0v10Bronco";
 

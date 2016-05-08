@@ -282,3 +282,8 @@ C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windo
 C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Debug\resources.en.resfiles
 C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Debug\resources.en.resfiles.intermediate
 C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\bin\ARM\Debug\BlankPage6.xbf
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Debug\BlankPage6.g.i.cs
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Debug\BlankPage6.g.cs
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Debug\BlankPage6.xaml
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Debug\BlankPage6.xbf

@@ -35,7 +35,7 @@
          Margin = "71,439,0,0" TextWrapping = "Wrap"  
          VerticalAlignment = "Top" Width = "219" Height = "69"/>
 
-        <Button Content = "Go to Main Page" Margin = "121,439,0,169" Click = "Button_Click"/>
+        <Button Content = "Go to Start Page" Margin = "121,439,0,169" Click = "Button_Click"/>
     
         </Grid>
     </StackPanel>

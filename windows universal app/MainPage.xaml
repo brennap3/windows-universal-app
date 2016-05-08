@@ -11,7 +11,7 @@
         <StackPanel x:Name="contentPanel" Margin="8,32,0,0">
             <Hub Header = "Welcome to Lost App" Margin="0,10,0,-10" Height="70"/>
             <Button x:Name="setupbutton" Content = "Go to Setup" Click = "Button_Click" Width="153" Background="Gray"/>
-            <Button x:Name="mainpagebutton"  Content = "Go to Main Screen" Click = "Button_Click_1" Width="153"  Background="Gray"/>
+            <Button x:Name="mainpagebutton"  Content = "Go to Main Menu" Click = "Button_Click_1" Width="153"  Background="Gray"/>
         </StackPanel>
     </Grid>
 

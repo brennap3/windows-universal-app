@@ -6,20 +6,24 @@
    xmlns:d = "http://schemas.microsoft.com/expression/blend/2008" 
    xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006" 
    mc:Ignorable = "d">
-    <StackPanel  x:Name="contentPanel">
-        <Grid Background = "Blue"  x:Name="body">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="73*"/>
-                <RowDefinition Height="247*"/>
-            </Grid.RowDefinitions>
-            <Hub Header = "" FontSize="14" Margin="-10,97,10,-97" Grid.RowSpan="2"/>
-            <Button Content = "Go to Main Page" x:Name="main" Margin = "111,337,0,185" Click = "Button_Click" Width="161" Grid.Row="1" Height="34" Background="Gray"/>
-            <Button Content = "Burst communique" x:Name="burst" Margin = "111,115,0,409" Click = "Button_Click_1" Width="161" Grid.Row="1"  Background="Gray"/>
-            <Button Content = "Take Video"  x:Name= "video" Margin = "111,152,0,372" Click = "Button_Click_2" Width="161" Grid.Row="1"  Background="Gray"/>
-            <Button Content = "Take Photo" x:Name= "photo" Margin = "111,189,0,335" Click = "Button_Click_3" Width="161" Grid.Row="1"  Background="Gray"/>
-            <Button Content = "Location" x:Name= "location" Margin = "111,226,0,298" Click = "Button_Click_4" Width="161" Grid.Row="1"  Background="Gray"/>
-            <Button Content = "Send SMS" x:Name= "sms" Margin = "111,263,0,261" Click = "Button_Click_5" Width="161" Grid.Row="1"  Background="Gray"/>
-            <Button Content = "Send Email" Margin = "111,300,0,224" Click = "Button_Click_6" Width="161" Grid.Row="1"  Background="Gray"/>
-        </Grid>
-    </StackPanel>
+    <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+        <StackPanel  x:Name="contentPanel">
+            <Grid Background = "Blue"  x:Name="body">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="73*"/>
+                    <RowDefinition Height="247*"/>
+                </Grid.RowDefinitions>
+                <Hub Header = "Main Menu" FontSize="14" Margin="0,45,0,-45" Grid.RowSpan="2"/>
+                <Button Content = "Go to Start Page" x:Name="main" Margin = "111,374,0,148" Click = "Button_Click" Width="161" Grid.Row="1" Height="34" Background="Gray"/>
+                <Button Content = "Burst communique" x:Name="burst" Margin = "111,115,0,409" Click = "Button_Click_1" Width="161" Grid.Row="1"  Background="Gray"/>
+                <Button Content = "Take Video"  x:Name= "video" Margin = "111,152,0,372" Click = "Button_Click_2" Width="161" Grid.Row="1"  Background="Gray"/>
+                <Button Content = "Take Photo" x:Name= "photo" Margin = "111,189,0,335" Click = "Button_Click_3" Width="161" Grid.Row="1"  Background="Gray"/>
+                <Button Content = "Location" x:Name= "location" Margin = "111,226,0,298" Click = "Button_Click_4" Width="161" Grid.Row="1"  Background="Gray"/>
+                <Button Content = "Send SMS" x:Name= "sms" Margin = "111,263,0,261" Click = "Button_Click_5" Width="161" Grid.Row="1"  Background="Gray"/>
+                <Button Content = "Send Email"  x:Name= "email"  Margin = "111,300,0,224" Click = "Button_Click_6" Width="161" Grid.Row="1"  Background="Gray"/>
+                <Button Content = "Panic Mode"  x:Name= "panic"  Margin = "111,337,0,187" Click = "Button_Click_7" Width="161" Grid.Row="1"  Background="Gray"/>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

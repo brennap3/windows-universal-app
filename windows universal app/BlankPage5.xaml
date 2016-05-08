@@ -6,10 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <StackPanel  x:Name="contentPanel">
+    <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+        <StackPanel  x:Name="contentPanel">
         <Grid Background="Blue" x:Name="body">
-        <WebView x:Name="webView1" Margin="10,128,10,170"/>
+        <Hub Header = "My Location" Margin="0,0,0,-70"/>
+                <WebView x:Name="webView1" Margin="10,128,10,170"/>
         <Button Content = "Go to Main Page" Margin = "80,475,0,133" Click = "Button_Click" Width="144" Background="Gray"/>
     </Grid>
    </StackPanel>
+        </ScrollViewer>
 </Page>

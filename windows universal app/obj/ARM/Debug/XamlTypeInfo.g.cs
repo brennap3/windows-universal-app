@@ -132,7 +132,7 @@ namespace windows_universal_app.windows_universal_app_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[8];
+            _typeNameTable = new string[9];
             _typeNameTable[0] = "UWPNavigation.BlankPage1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -140,9 +140,10 @@ namespace windows_universal_app.windows_universal_app_XamlTypeInfo
             _typeNameTable[4] = "UWPNavigation.BlankPage3";
             _typeNameTable[5] = "UWPNavigation.BlankPage4";
             _typeNameTable[6] = "windows_universal_app.BlankPage5";
-            _typeNameTable[7] = "UWPNavigation.MainPage";
+            _typeNameTable[7] = "windows_universal_app.BlankPage6";
+            _typeNameTable[8] = "UWPNavigation.MainPage";
 
-            _typeTable = new global::System.Type[8];
+            _typeTable = new global::System.Type[9];
             _typeTable[0] = typeof(global::UWPNavigation.BlankPage1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -150,7 +151,8 @@ namespace windows_universal_app.windows_universal_app_XamlTypeInfo
             _typeTable[4] = typeof(global::UWPNavigation.BlankPage3);
             _typeTable[5] = typeof(global::UWPNavigation.BlankPage4);
             _typeTable[6] = typeof(global::windows_universal_app.BlankPage5);
-            _typeTable[7] = typeof(global::UWPNavigation.MainPage);
+            _typeTable[7] = typeof(global::windows_universal_app.BlankPage6);
+            _typeTable[8] = typeof(global::UWPNavigation.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -190,7 +192,8 @@ namespace windows_universal_app.windows_universal_app_XamlTypeInfo
         private object Activate_4_BlankPage3() { return new global::UWPNavigation.BlankPage3(); }
         private object Activate_5_BlankPage4() { return new global::UWPNavigation.BlankPage4(); }
         private object Activate_6_BlankPage5() { return new global::windows_universal_app.BlankPage5(); }
-        private object Activate_7_MainPage() { return new global::UWPNavigation.MainPage(); }
+        private object Activate_7_BlankPage6() { return new global::windows_universal_app.BlankPage6(); }
+        private object Activate_8_MainPage() { return new global::UWPNavigation.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -245,9 +248,16 @@ namespace windows_universal_app.windows_universal_app_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  UWPNavigation.MainPage
+            case 7:   //  windows_universal_app.BlankPage6
                 userType = new global::windows_universal_app.windows_universal_app_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MainPage;
+                userType.Activator = Activate_7_BlankPage6;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  UWPNavigation.MainPage
+                userType = new global::windows_universal_app.windows_universal_app_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
