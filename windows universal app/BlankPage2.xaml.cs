@@ -34,6 +34,7 @@ using Tweetinvi.Credentials;
 using Tweetinvi.Factories;
 using Tweetinvi.Controllers.User;
 using Tweetinvi.Core.Authentication;
+using Windows.Devices.Sensors;
 
 
 
@@ -42,23 +43,23 @@ using Tweetinvi.Core.Authentication;
 // The Blank Page item template is documented at  
 //http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace UWPNavigation {
+namespace UWPNavigation
+{
 
    /// <summary> 
       /// An empty page that can be used on its own or navigated to within a Frame. 
    /// </summary>
-	
    public sealed partial class BlankPage2 : Page {
 
         string path;
         SQLite.Net.SQLiteConnection conn;
+        private Accelerometer myAccelerometer;
         public BlankPage2(){ 
          this.InitializeComponent();
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path,
                       "db.sqlite");
             conn = new SQLite.Net.SQLiteConnection(new
                    SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
@@ -78,8 +79,8 @@ namespace UWPNavigation {
 
             var emp = new LatLng()
             {
-                lat = "Latitude" + longi,
-                lng = "Longitude" + lati
+                lat = "Latitude" + lati,
+                lng = "Longitude" + longi
             };
 
             return emp;
@@ -89,13 +90,40 @@ namespace UWPNavigation {
         {
 
             LatLng latlng = await mycoordinatesGPS();
-            string message = latlng.lat+latlng.lng + "_last_known_coordinates";
-            //txtblock.Text = message;
-            //ComposeEmail("brennap3@yahoo.ie",message);
-            //ComposeSMS("0858550333",message);
-            await sendSMS(message);
-            await Send_Email(message);
-            await SendTweet(message);
+            string message = latlng.lat+latlng.lng + "_Test_Distress_Call";
+            try
+            {
+                await sendSMS(message);
+                await Send_Email(message);
+                await SendTweet(message);
+                string Result = "Message sen on all channels";
+                Windows.UI.Popups.MessageDialog dlg = new
+                    Windows.UI.Popups.MessageDialog(Result);
+
+                await dlg.ShowAsync();
+            }
+            catch (Exception ex) {
+                string BadResult = "somethings gone wrong"+ex;
+                Windows.UI.Popups.MessageDialog dlg = new
+                Windows.UI.Popups.MessageDialog(BadResult);
+
+                await dlg.ShowAsync();
+            }
+        }
+
+        private async void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            LatLng latlng = await mycoordinatesGPS();
+            string message = latlng.lat + latlng.lng + "_Test_Distress_Call";
+            ComposeSMS("0858550333", message);
+
+        }
+
+        private async void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            LatLng latlng = await mycoordinatesGPS();
+            string message = latlng.lat + latlng.lng + "_Test_Distress_Call";
+            ComposeEmail("brennap3@yahoo.ie", message);
         }
 
         private async void Button_Click_2(object sender, RoutedEventArgs e)
@@ -108,12 +136,17 @@ namespace UWPNavigation {
             this.Frame.Navigate(typeof(BlankPage4));
         }
 
+        private async void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(windows_universal_app.BlankPage5));
+        }
+
         private async void ComposeEmail(String recipient,
         String messageBody)
         {
             await Launcher.LaunchUriAsync(
             new Uri(
-            "mailto:"+recipient+"?subject=SomeSubject&body="+messageBody
+            "mailto:"+recipient+"?subject=EmergencyBroadcast&body="+messageBody
             ));
 
         }
@@ -129,8 +162,8 @@ namespace UWPNavigation {
         private async Task sendSMS(
        String messageBody)
         {
-            string username = "brennap3";
-            //string username = "724433";
+            string username = "brennap3"; //should be in a resource file
+            //string username = "724433"; //should be in a resource file
             string password = "0v10Bronco";
             /*
             * Your phone number, including country code, i.e. +44123123123 in this case:
@@ -187,10 +220,7 @@ namespace UWPNavigation {
             }
 
             // Display Result by Diaglog box
-            Windows.UI.Popups.MessageDialog dlg = new
-                Windows.UI.Popups.MessageDialog(Result);
-
-            await dlg.ShowAsync();
+            
         }
 
         private String RetrievePhone()

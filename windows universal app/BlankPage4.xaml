@@ -7,14 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid >
-            <Hub Header = "Photo capture"/>
-            <Button Content = "Capture Photo"  Click = "Button_Click" Margin="91,93,0,515" Width="131"/>
-            <Button x:Name="button" Content="Return To Splash" Click = "button_Click_1" HorizontalAlignment="Left" Margin="91,130,0,478"  Width="131"/>
-            <Image Name="captureImage" HorizontalAlignment="Left" Height="503"  VerticalAlignment="Top" Width="360"/>
+    <StackPanel  x:Name="contentPanel">
+        <Grid Background="Blue" x:Name="body">
+            <Grid  x:Name="body2">
+                <Hub Header = "Photo capture" Margin="0,0,0,-70"/>
+                <Button x:Name="button2" Content = "Capture Photo"  Click = "Button_Click" Margin="91,93,0,515" Width="131" Background="Gray"/>
+                <Button x:Name="button" Content="Return To Main" Click = "button_Click_1" HorizontalAlignment="Left" Margin="91,130,0,478"  Width="131"  Background="Gray"/>
+                <Image x:Name="captureImage" HorizontalAlignment="Left" Height="146"  VerticalAlignment="Top" Width="360" Margin="32,215,0,0" />
 
 
+            </Grid>
         </Grid>
-    </Grid>
+    </StackPanel>
 </Page>

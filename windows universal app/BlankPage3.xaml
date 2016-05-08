@@ -6,16 +6,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel  x:Name="contentPanel">
+    <Grid Background="Blue" x:Name="body">
         <Hub Header = "Video capture"/>
-        <Grid >
-        <Button Content = "Capture Video"  Click = "Button_Click" Margin="91,93,0,515" Width="131"/>
-        <Button x:Name="button" Content="Return To Splashs" Click = "button_Click_1" HorizontalAlignment="Left" Margin="91,130,0,478"  Width="131"/>
+        <Grid x:Name="body2">
+            <Button Content = "Capture Video" x:Name= "video"  Click = "Button_Click" Margin="33,105,0,583" Width="131" Background="Gray"/>
+            <Button x:Name="button" Content="Return To Main" Click = "button_Click_1" HorizontalAlignment="Left" Margin="33,142,0,546"  Width="131" Background="Gray"/>
         
         <MediaElement x:Name="demoVideo"></MediaElement>
         
     </Grid>
     </Grid>
+    </StackPanel>
 </Page>

@@ -27,7 +27,7 @@ namespace UWPNavigation
     {
         private Windows.Storage.StorageFile storeFile;  
         private IRandomAccessStream stream;
-        public event TypedEventHandler<Accelerometer, AccelerometerShakenEventArgs> Shaken;
+        
 
         public BlankPage3()
         {
@@ -57,21 +57,21 @@ namespace UWPNavigation
                 string filename = "videorecordedat" + dtstr;
 
 
-                FileSavePicker save = new FileSavePicker();
-                save.FileTypeChoices.Add("Video", new List<string>() { ".mp4", ".wmv" });
-                save.DefaultFileExtension = ".mp4";
-                save.SuggestedFileName = "video"+filename;
-                save.SuggestedStartLocation = PickerLocationId.VideosLibrary;
-                save.SuggestedSaveFile = storeFile;
-                var s = await save.PickSaveFileAsync();
-        
+                //FileSavePicker save = new FileSavePicker();
+                //save.FileTypeChoices.Add("Video", new List<string>() { ".mp4", ".wmv" });
+                //save.DefaultFileExtension = ".mp4";
+                //save.SuggestedFileName = "video"+filename;
+                //save.SuggestedStartLocation = PickerLocationId.VideosLibrary;
+                //save.SuggestedSaveFile = storeFile;
+                //var s = await save.PickSaveFileAsync();
+
                 using (var reader = new DataReader(stream.GetInputStreamAt(0)))
                 {
                     await reader.LoadAsync((uint)stream.Size);
                     byte[] buffer = new byte[(int)stream.Size];
                     reader.ReadBytes(buffer);
-                    await FileIO.WriteBytesAsync(s, buffer);
-                    await Upload(s,buffer);
+                    await FileIO.WriteBytesAsync(storeFile, buffer);
+                    await Upload(storeFile, buffer);
                 }
 
 

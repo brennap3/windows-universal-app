@@ -6,8 +6,9 @@
    xmlns:d = "http://schemas.microsoft.com/expression/blend/2008" 
    xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006" 
    mc:Ignorable = "d">
-
-    <Grid Background = "{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel  x:Name="contentPanel">
+        <Grid Background="Blue" x:Name="body">
+            
         <Hub Header = "Welcome to the sign in page" Margin="10,10,-10,-10"/>
         <Button x:Name = "Retrieve" Content = "Retrieve" HorizontalAlignment = "Left"  
          VerticalAlignment = "Top" Margin = "212,384,0,0"  
@@ -35,6 +36,7 @@
          VerticalAlignment = "Top" Width = "219" Height = "69"/>
 
         <Button Content = "Go to Main Page" Margin = "121,439,0,169" Click = "Button_Click"/>
-    </Grid>
-
+    
+        </Grid>
+    </StackPanel>
 </Page>

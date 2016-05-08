@@ -1,0 +1,11 @@
+/out:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\intermediate\SgGenerated\\"
+/int:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\intermediate\\"
+/ref:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\in\\"
+/ref:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\in\\"
+/ref:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Private\\"
+/ref:"C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib
+"@C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"
