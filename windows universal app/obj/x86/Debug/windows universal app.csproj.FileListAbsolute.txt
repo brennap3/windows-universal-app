@@ -281,3 +281,8 @@ C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windo
 C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\x86\Debug\windows universal app.csprojResolveAssemblyReference.cache
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\bin\x86\Debug\BlankPage6.xbf
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\x86\Debug\BlankPage6.g.i.cs
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\x86\Debug\BlankPage6.g.cs
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\x86\Debug\BlankPage6.xaml
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\obj\x86\Debug\BlankPage6.xbf

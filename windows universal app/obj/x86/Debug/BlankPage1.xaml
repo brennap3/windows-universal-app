@@ -35,7 +35,7 @@
          Margin = "71,439,0,0" TextWrapping = "Wrap"  
          VerticalAlignment = "Top" Width = "219" Height = "69"/>
 
-        <Button x:ConnectionId='10' Content = "Go to Main Page" Margin = "121,439,0,169"                       />
+        <Button x:ConnectionId='10' Content = "Go to Start Page" Margin = "121,439,0,169"                       />
     
         </Grid>
     </StackPanel>

@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-08T06:26:34.137</Modified>
+      <Modified>2016-05-11T18:12:02.126</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\bin\x86\Debug\windows universal app.exe">
       <PackagePath>entrypoint\windows universal app.exe</PackagePath>
-      <Modified>2016-05-08T06:26:33.487</Modified>
+      <Modified>2016-05-11T18:11:58.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -594,7 +594,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\bin\x86\Debug\windows universal app.xr.xml">
       <PackagePath>windows universal app.xr.xml</PackagePath>
-      <Modified>2016-05-08T05:45:17.325</Modified>
+      <Modified>2016-05-11T18:11:58.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -602,11 +602,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-08T05:45:18.100</Modified>
+      <Modified>2016-05-11T18:11:59.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Documents\Visual Studio 2015\Projects\windows universal app\windows universal app\bin\x86\Debug\Core\windows universal app.exe">
       <PackagePath>windows universal app.exe</PackagePath>
-      <Modified>2016-05-08T06:26:34.129</Modified>
+      <Modified>2016-05-11T18:12:02.121</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
